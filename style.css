@@ -45,7 +45,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px;
 }
 
 .bloc-md {
@@ -65,11 +65,18 @@ a:hover {
 
 address {
     text-align: center;
-    color: #333333;
+    color: #000000;
 }
 
 form {
-    padding: 3rem 0;
+    padding: 3rem .8rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .bg-center,
@@ -149,7 +156,7 @@ form {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .a-btn:hover,
@@ -166,7 +173,7 @@ form {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -300,7 +307,7 @@ form {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .navbar {
@@ -376,10 +383,6 @@ form {
     float: right;
     position: relative;
     z-index: 2;
-}
-
-.img-responsive {
-    display: initial;
 }
 
 @media (min-width: 768px) {
@@ -552,8 +555,9 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -562,7 +566,6 @@ a[data-lightbox]:hover::before {
     font-size: 32px;
     width: 50px;
     height: 50px;
-    margin-left: -25px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
@@ -572,16 +575,25 @@ a[data-lightbox]:hover::before {
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a[data-lightbox]:hover img {
-    opacity: 0.6;
+    filter: brightness(120%);
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
 
 #lightbox-modal {
     display: flex;
+    align-items: center;
+}
+#lightbox-modal .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -597,13 +609,10 @@ a[data-lightbox]:hover img {
 }
 
 .lightbox-caption {
-    padding: 20px;
     color: #FFF;
     background: rgba(0, 0, 0, .5);
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 5px;
+    margin: 10px;
+    text-align: center;
 }
 
 .close-lightbox {
@@ -649,9 +658,9 @@ a[data-lightbox]:hover img {
     left: 25px;
 }
 
-.snapshot-lb .modal-body {
+/*.snapshot-lb .modal-body {
     padding-bottom: 45px;
-}
+}*/
 
 .snapshot-lb .lightbox-caption {
     padding: 0;
@@ -699,8 +708,8 @@ a {
 }
 
 p {
-    font-size: 16px;
-    color: #333333;
+    font-size: 14px;
+    color: #000000;
 }
 
 .tight-width-whitespace {
@@ -731,7 +740,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.4em;
 }
 
@@ -739,7 +748,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #000000!important;
 }
 
 .med-width-whitespace {
@@ -749,11 +758,11 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #000000!important;
 }
 
 h4 {
-    color: #333333!important;
+    color: #000000!important;
 }
 
 .icons {
@@ -770,8 +779,8 @@ h4 {
 }
 
 .portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .avatar {
@@ -792,21 +801,21 @@ h4 {
     background-color: #FFFFFF;
 }
 
-/*.bgc-dark-slate-blue {
+.bgc-dark-slate-blue {
     background-color: #364577;
-}*/
+}
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #c27956;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #333333!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -839,9 +848,9 @@ h4 {
     background-image: url("img/dots-bg.png");
 }
 
-/*.bg-lines-h2-bg {
+.bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
-}*/
+}
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.webp");
