@@ -658,10 +658,6 @@ a[data-lightbox]:hover img {
     left: 25px;
 }
 
-/*.snapshot-lb .modal-body {
-    padding-bottom: 45px;
-}*/
-
 .snapshot-lb .lightbox-caption {
     padding: 0;
     color: rgba(0, 0, 0, .5);
